@@ -1,0 +1,17 @@
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/base";
+@import "partials/layout";
+@import "partials/reset";
+@import "partials/fonts";
+
+li {
+  flex: 0 1 100%;
+  @include tablet {
+    flex: 0 1 50%;
+  }
+  @include desktop {
+    flex: 0 1 25%;
+  }
+}
